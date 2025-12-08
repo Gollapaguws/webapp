@@ -1,0 +1,2 @@
+# Ensure .well-known directory is accessible
+/.well-known/
