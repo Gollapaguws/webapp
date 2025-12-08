@@ -1,0 +1,11 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.westcoastmotorcycles.app",
+    "sha256_cert_fingerprints": [
+      "DF:D7:C3:EB:56:AE:DD:41:30:BB:D3:B0:58:BD:6C:79:2C:19:A8:4C:3E:58:AF:41:39:39:36:14:E7:BF:A7:73",
+      "11:3A:78:AF:F8:1B:4A:69:E7:68:CE:42:05:23:1C:01:A0:C1:15:6E:1E:9E:16:19:99:AB:F4:7E:7E:D3:65:BF"
+    ]
+  }
+}]
