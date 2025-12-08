@@ -1,63 +1,100 @@
 # Copilot Instructions for webapp
 
 ## Project Overview
-<!-- To be filled: Describe the purpose, tech stack, and main components of this web application -->
 
-This is a new web application project. Update this section with:
-- Primary purpose and business domain
-- Technology stack (framework, language, database, etc.)
-- Target deployment environment
+A static website built with vanilla HTML, CSS, and JavaScript. No build tools or frameworks required.
+
+**Tech Stack:**
+- HTML5 for structure
+- CSS3 with modern features (Grid, Flexbox, CSS Variables)
+- Vanilla JavaScript (ES6+)
+- No dependencies or build process
+
+**Deployment:** Can be served from any static hosting (GitHub Pages, Netlify, Vercel, etc.)
 
 ## Architecture
-<!-- To be filled: Document high-level architecture once established -->
 
-Key areas to document:
-- Main application structure (monolithic, microservices, etc.)
-- Data flow and service boundaries
-- External integrations and APIs
-- Configuration management approach
+Simple static site structure with separation of concerns:
+- `index.html` - Main entry point with semantic HTML structure
+- `styles.css` - All styling with mobile-first responsive design
+- `script.js` - Client-side interactivity and animations
+
+**Design Patterns:**
+- CSS Grid for layout (features section)
+- Intersection Observer API for scroll animations
+- CSS transitions for smooth interactions
 
 ## Development Workflow
 
 ### Getting Started
-<!-- To be filled: Add setup instructions -->
 
 ```powershell
-# Clone and setup
+# Clone and navigate
 git clone <repository-url>
 cd webapp
-# Add installation commands here
 ```
 
 ### Running the Application
-<!-- To be filled: Add run commands -->
+
+Open `index.html` directly in a browser, or use a local server:
+
+```powershell
+# Using Python
+python -m http.server 8000
+
+# Using Node.js (if http-server is installed)
+npx http-server -p 8000
+
+# Using PHP
+php -S localhost:8000
+```
+
+Then open `http://localhost:8000`
 
 ### Testing
-<!-- To be filled: Add test commands and strategies -->
+
+Manual testing in browser. Check responsive design with DevTools device emulation.
 
 ## Code Conventions
-<!-- To be filled: Document project-specific patterns -->
 
-### Naming Conventions
-- Follow language/framework standard conventions
-- Document any project-specific naming rules
+### CSS Conventions
+- Use semantic class names (`.hero`, `.features`, `.feature`)
+- Mobile-first responsive design with `@media` queries
+- CSS Grid for layouts, Flexbox for component alignment
+- Smooth transitions on hover states (300ms ease)
 
-### File Organization
-- Document directory structure once established
-- Explain the purpose of key directories
+### JavaScript Conventions
+- Use `const`/`let` (no `var`)
+- Modern ES6+ features (arrow functions, template literals)
+- Event delegation where appropriate
+- Intersection Observer for scroll animations
 
-### Error Handling
-- Document preferred error handling patterns
-- Note any custom error types or middleware
+### HTML Structure
+- Semantic HTML5 elements (`header`, `main`, `section`, `footer`)
+- Accessibility: proper heading hierarchy, alt text, ARIA labels
+- External CSS and JS files linked in `<head>` and before `</body>`
 
-## Key Files and Directories
-<!-- To be filled as project grows -->
+## Key Files
 
-## Dependencies and Integrations
-<!-- To be filled: Document external services and libraries -->
+- `index.html` - Main page structure
+- `styles.css` - All styling (includes responsive design)
+- `script.js` - Interactive features and animations
 
 ## Common Tasks
-<!-- To be filled: Add frequent developer operations -->
+
+**Add a new section:**
+1. Add semantic HTML in `index.html` within `<main>`
+2. Style in `styles.css` with appropriate class names
+3. Add interactivity in `script.js` if needed
+
+**Update colors:**
+- Primary gradient: `#667eea` to `#764ba2` (header)
+- Accent color: `#667eea` (headings)
+- Adjust in `styles.css`
+
+**Add animations:**
+- Use Intersection Observer pattern (see existing `.feature` animation)
+- Combine with CSS transitions for smooth effects
 
 ---
 
